@@ -12,3 +12,12 @@ npm install -y tailwindcss daisyui
 npm install -D -y @tailwindcss/vite @types/node tsx vitest
 npm install -y pinia vue-router
 ```
+
+## Usage
+
+From within an empty project folder run:
+
+```sh
+git init .
+npx degit jchrist77/vue-starter
+```
