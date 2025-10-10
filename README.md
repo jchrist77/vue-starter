@@ -8,9 +8,15 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 
 ```sh
 npm create vite . -- --template vue-ts
-npm install -y tailwindcss daisyui
-npm install -D -y @tailwindcss/vite @types/node tsx vitest
+# UI tools
+npm install -y tailwindcss daisyui @iconify/vue @vueuse/core
+npm install -D -y @tailwindcss/vite 
+# Pinia and Vue-Router
 npm install -y pinia vue-router
+# Testing tools
+npm install -D -y vitest vitest-browser-vue @vue/test-utils jsdom @types/jsdom @types/node tsx
+# Linting tools
+npm install -D -y eslint eslint-plugin-vue prettier @vue/eslint-config-prettier @vue/eslint-config-typescript
 ```
 
 ## Usage
