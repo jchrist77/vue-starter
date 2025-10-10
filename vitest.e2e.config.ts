@@ -1,14 +1,7 @@
-import vue from '@vitejs/plugin-vue'
-import { fileURLToPath, URL } from 'node:url'
-import { defineConfig } from 'vitest/config'
+import { defineConfig, mergeConfig } from 'vitest/config'
+import vitestConfig from './vitest.config'
 
-export default defineConfig({
-  plugins: [vue()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  },
+export default mergeConfig(vitestConfig, defineConfig({
   test: {
     include: [
       'tests/e2e/**/*.{test,spec}.ts',
@@ -20,4 +13,4 @@ export default defineConfig({
       ],
     },
   },
-})
+}))
