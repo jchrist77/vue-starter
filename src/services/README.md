@@ -2,4 +2,4 @@
 
 Directory for Typescript service files.
 
-For example: ```counter.ts```.
+For example: `counter.ts`.

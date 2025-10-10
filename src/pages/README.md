@@ -2,4 +2,4 @@
 
 Directory for Vue Pages files.
 
-For example: ```LoginPage.vue```, ```HomePage.vue```, etc.
+For example: `LoginPage.vue`, `HomePage.vue`, etc.

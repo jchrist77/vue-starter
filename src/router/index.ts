@@ -7,9 +7,9 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: () => import('@/pages/HomePage.vue'),
-      meta: { requiresAuth: false }
+      meta: { requiresAuth: false },
     },
-  ]
+  ],
 })
 
 export default router

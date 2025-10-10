@@ -2,4 +2,4 @@
 
 Directory for configuration files.
 
-For example: ```env.ts```, ```firebase.ts```, etc.
+For example: `env.ts`, `firebase.ts`, etc.

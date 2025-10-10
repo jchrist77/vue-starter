@@ -2,4 +2,4 @@
 
 Directory for Pinia store files.
 
-For example: ```app.ts```.
+For example: `app.ts`.

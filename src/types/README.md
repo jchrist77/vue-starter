@@ -2,4 +2,4 @@
 
 Directory for Typescript types files.
 
-For example: ```user.ts```.
+For example: `user.ts`.
