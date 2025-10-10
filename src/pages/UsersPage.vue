@@ -4,7 +4,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 <template>
   <div class="h-full flex flex-col items-center justify-center">
-    <HelloWorld name="World" />
+    <h1 class="text-5xl text-primary text-shadow-sm">Users</h1>
   </div>
 </template>
 
