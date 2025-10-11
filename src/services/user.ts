@@ -6,13 +6,15 @@ import type { User } from '@/types';
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 // Simulated data
-let usersData: User[] = [
+const usersData: User[] = [
   { id: 1, name: 'Alice Smith', email: 'alice@example.com', status: 'active' },
   { id: 2, name: 'Bob Johnson', email: 'bob@example.com', status: 'active' },
   { id: 3, name: 'Charlie Brown', email: 'charlie@example.com', status: 'inactive' },
 ];
 
 export const UserService = {
+  currentUser: null as User | null,
+
   /**
    * Fetches all users from the (simulated) API.
    * @returns A promise that resolves to an array of users.
@@ -42,5 +44,9 @@ export const UserService = {
     usersData[userIndex] = updatedUser; // Update simulated data
 
     return updatedUser;
+  },
+
+  setCurrentUser(user: User) {
+    this.currentUser = user
   }
 };

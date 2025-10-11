@@ -1,7 +1,9 @@
 export class CounterService {
+  initialCount: number = 0
   count: number = 0
 
   constructor(_count: number = 0) {
+    this.initialCount = _count
     this.count = _count
   }
 
@@ -14,6 +16,6 @@ export class CounterService {
   }
 
   reset() {
-    this.count = 0
+    this.count = this.initialCount
   }
 }

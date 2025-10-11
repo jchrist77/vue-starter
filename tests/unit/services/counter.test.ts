@@ -21,7 +21,8 @@ describe('CounterService', () => {
 
   it('resets the count to zero', () => {
     const counterService = new CounterService(5)
+    counterService.increment()
     counterService.reset()
-    expect(counterService.count).toBe(0)
+    expect(counterService.count).toBe(5)
   })
 })

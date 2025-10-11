@@ -1,5 +1,6 @@
 <script setup>
 import ModeToggle from '@/components/ModeToggle.vue'
+import ThemePicker from '@/components/ThemePicker.vue'
 </script>
 
 <template>
@@ -17,7 +18,10 @@ import ModeToggle from '@/components/ModeToggle.vue'
       </ul>
     </div>
     <div class="flex-none">
-      <ul class="menu menu-horizontal text-lg">
+      <ul class="menu menu-horizontal text-lg align-center">
+        <li>
+          <ThemePicker />
+        </li>
         <li>
           <ModeToggle />
         </li>
