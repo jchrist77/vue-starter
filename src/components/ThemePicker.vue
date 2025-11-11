@@ -24,8 +24,9 @@ const currentTheme = ref('default')
     </div>
     <ul tabindex="0" class="dropdown-content bg-base-300 rounded-box z-1 p-2 shadow-2xl w-36 h-48 overflow-x-auto">
       <li v-for="theme of themes">
-        <input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-ghost justify-start uppercase"
-          :aria-label="theme" :value="theme" @click="currentTheme = theme" />
+        <input type="radio" name="theme-dropdown"
+          class="theme-controller btn btn-sm btn-ghost justify-start uppercase text-xs" :aria-label="theme"
+          :value="theme" @click="currentTheme = theme" />
       </li>
     </ul>
   </div>
@@ -40,7 +41,7 @@ const currentTheme = ref('default')
     <ul tabindex="0" class="dropdown-content bg-base-300 rounded-box z-1 shadow-2xl h-48 w-36 overflow-x-auto right-0">
       <li v-for="theme of themes">
         <input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-ghost justify-start uppercase"
-          :class="currentTheme === theme ? 'active' : ''" :aria-label="theme" :value="theme"
+          :class="currentTheme === theme ? 'bg-primary text-white' : ''" :aria-label="theme" :value="theme"
           @click="currentTheme = theme" />
       </li>
     </ul>

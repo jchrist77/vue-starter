@@ -12,7 +12,7 @@ npm create vite . -- --template vue-ts
 npm install -y tailwindcss daisyui @iconify/vue @vueuse/core
 npm install -D -y @tailwindcss/vite 
 # Pinia and Vue-Router
-npm install -y pinia vue-router
+npm install -y pinia pinia-plugin-persistedstate vue-router
 # Testing tools
 npm install -D -y vitest vitest-browser-vue @vue/test-utils jsdom @types/jsdom @types/node tsx
 # Linting tools
